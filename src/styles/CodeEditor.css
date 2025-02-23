@@ -1,0 +1,16 @@
+.main-container {
+  width: 100%;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-icon {
+  width: 32px;
+  height: 32px;
+}
