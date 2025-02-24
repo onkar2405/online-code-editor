@@ -1,4 +1,13 @@
 .editor {
-  width: 100%;
-  height: 400px;
+  width: 450px;
+  height: 250px;
+}
+
+.editor-collapse {
+  width: 200px;
+  height: 250px;
+}
+
+.flex-1 {
+  flex: 1;
 }

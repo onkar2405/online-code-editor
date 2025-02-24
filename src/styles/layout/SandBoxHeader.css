@@ -5,10 +5,15 @@
   align-items: center;
   background-color: black;
   color: white;
+  padding: 4px 8px;
 }
 
 .expand-btn {
   background: none;
   border: none;
   color: white;
+}
+
+.title {
+  margin: 8px 0;
 }

@@ -12,7 +12,7 @@ export default function CodeEditor() {
     <div className="main-container">
       <div className="title-section">
         <FaCode className="title-icon" />
-        <h1>Code Editor</h1>
+        <h1 className="project-title">Code Editor</h1>
       </div>
 
       <div className="editor-wrapper">
