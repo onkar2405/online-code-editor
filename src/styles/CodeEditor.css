@@ -4,9 +4,19 @@
 
 .title-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.height-250 {
+  height: 250px;
 }
 
 .title-icon {
@@ -22,4 +32,19 @@
 
 .project-title {
   margin: 8px;
+}
+
+.run-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: medium;
+  background-color: slategrey;
+}
+
+.output-window {
+  width: 100%;
+  height: 100%;
+  border: navy;
 }
