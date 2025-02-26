@@ -13,14 +13,10 @@ export default function CodeEditor() {
   const [jsCode, setJsCode] = useState("");
   const [cssCode, setCssCode] = useState("");
   const [htmlCode, setHtmlCode] = useState("");
+  const [codeToRender, setCodeToRender] = useState("");
 
   function compileCode() {
-    const iframe = document.getElementById("output-frame");
-    const doc = iframe.contentWindow.document;
-
-    doc.open();
-    doc.write(`
-      <!DOCTYPE html>
+    let codeToRender = `<!DOCTYPE html>
       <html lang="en">
       <head>
         <meta charset="UTF-8">
@@ -31,9 +27,9 @@ export default function CodeEditor() {
         ${htmlCode}
         <script>${jsCode}</script>
       </body>
-      </html>
-    `);
-    doc.close();
+      </html>`;
+
+    setCodeToRender(codeToRender);
   }
 
   return (
@@ -98,6 +94,7 @@ export default function CodeEditor() {
           title="output"
           className="output-window"
           id="output-frame"
+          srcDoc={codeToRender}
         ></iframe>
       </div>
     </div>
